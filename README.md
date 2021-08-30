@@ -21,6 +21,10 @@
   - [Tutorial](https://tutorials-raspberrypi.com/raspberry-pi-temperature-sensor-1wire-ds18b20/)
   - Protocol: 1-wire
   - Pins: DAT, VCC, GND
+- Atomizer
+  - Status: Working
+  - Type:
+  - Pins:
 - Light Intensity
   - Tutorial: https://www.raspberrypi-spy.co.uk/2015/03/bh1750fvi-i2c-digital-light-intensity-sensor/
   - Protocol: I2C
