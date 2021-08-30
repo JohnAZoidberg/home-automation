@@ -31,6 +31,18 @@
 - RTC
   - [Tutorial](http://www.intellamech.com/RaspberryPi-projects/rpi_RTCds3231)
   - Type: DS3231
+- IR Led:
+  - Status: Working but don't know patterns
+  - Type: 38khz
+  - Pins: DAT, VCC, GND
+  - Protocol: on/off GPIO
+  - Script:
+- IR Sensor
+  - Tutorial: https://devkimchi.com/2020/08/12/turning-raspberry-pi-into-remote-controller/
+  - Type:
+  - Pins: DAT, VCC, GND
+  - Protocol: on/off GPIO
+  - Script:
 - Light Intensity
   - Tutorial: https://www.raspberrypi-spy.co.uk/2015/03/bh1750fvi-i2c-digital-light-intensity-sensor/
   - Protocol: I2C
