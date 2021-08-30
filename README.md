@@ -25,6 +25,9 @@
   - Status: Working
   - Type:
   - Pins:
+- Moisture Sensor
+  - [Tutorial](https://thepihut.com/blogs/raspberry-pi-tutorials/raspberry-pi-plant-pot-moisture-sensor-with-email-notification-tutorial)
+  - Pins: GND, VCC, DAT
 - Light Intensity
   - Tutorial: https://www.raspberrypi-spy.co.uk/2015/03/bh1750fvi-i2c-digital-light-intensity-sensor/
   - Protocol: I2C
