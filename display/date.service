@@ -1,0 +1,13 @@
+[Unit]
+Description=Date
+#After=multi-user.target
+After=display.service
+Wants=date.timer
+
+[Service]
+Type=oneshot
+User=pi
+ExecStart=/home/pi/date.sh
+
+[Install]
+WantedBy=multi-user.target

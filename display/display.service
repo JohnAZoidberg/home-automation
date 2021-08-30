@@ -1,0 +1,18 @@
+[Unit]
+Description=I2C Display
+#After=multi-user.target
+Wants=date.service
+
+[Service]
+Type=simple
+Restart=no
+#Restart=always
+RestartSec=1
+User=pi
+ExecStart=/home/pi/i2clcd.py
+#ExecStartPre=mkfifo /run/display
+#ExecStartPre=chown pi /run/display
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
