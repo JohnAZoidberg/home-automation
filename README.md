@@ -28,6 +28,9 @@
 - Moisture Sensor
   - [Tutorial](https://thepihut.com/blogs/raspberry-pi-tutorials/raspberry-pi-plant-pot-moisture-sensor-with-email-notification-tutorial)
   - Pins: GND, VCC, DAT
+- RTC
+  - [Tutorial](http://www.intellamech.com/RaspberryPi-projects/rpi_RTCds3231)
+  - Type: DS3231
 - Light Intensity
   - Tutorial: https://www.raspberrypi-spy.co.uk/2015/03/bh1750fvi-i2c-digital-light-intensity-sensor/
   - Protocol: I2C
