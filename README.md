@@ -13,6 +13,10 @@
   - Type: HC-SR501
   - Pins:
   - Script:
+- Humidity Sensor
+  - Type: DHT22
+  - [Tutorial](https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/)
+  - Pins: GND, DAT, VCC
 - Light Intensity
   - Tutorial: https://www.raspberrypi-spy.co.uk/2015/03/bh1750fvi-i2c-digital-light-intensity-sensor/
   - Protocol: I2C
