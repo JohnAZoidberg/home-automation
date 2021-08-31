@@ -56,6 +56,17 @@
   - Pins: 3V3, GND, SCL, SDA
   - Script: tof/vl53l0x_simpletest.py
 - UV Sensor
+  - Sensor
+    - [Tutorial](http://www.pibits.net/code/raspberry-pi-and-guva-s12sd-uv-sensor.php)
+    - Pins: SIO, GND, 3V3
+    - Type: guva-s12sd
+    - Protocol: Analog voltage
+  - ADC
+    - [Tutorial](https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/python-circuitpython)
+    - Protocol: I2C
+    - Pins: 3V3, GND, SCL, SDA
+    - Type: ADS1115
+    - Script: uv/ads115.py
 - Air Pressure, Temperature, Humidity
   - Type: BME280
   - [Tutorial](https://www.raspberrypi-spy.co.uk/2016/07/using-bme280-i2c-temperature-pressure-sensor-in-python/)
