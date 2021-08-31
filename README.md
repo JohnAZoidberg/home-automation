@@ -51,6 +51,7 @@
   - Script: tapo/tapo.py
 - ToF Sensor (Time of Flight, distance)
   - [Code](https://github.com/adafruit/Adafruit_CircuitPython_VL53L0X)
+  - [Datasheet](https://www.st.com/resource/en/datasheet/vl53l0x.pdf)
   - Protocol: I2C
   - Pins: 3V3, GND, SCL, SDA
   - Script: tof/vl53l0x_simpletest.py
