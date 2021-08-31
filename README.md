@@ -55,3 +55,9 @@
   - Pins: 3V3, GND, SCL, SDA
   - Script: tof/vl53l0x_simpletest.py
 - UV Sensor
+- Air Pressure, Temperature, Humidity
+  - Type: BME280
+  - [Tutorial](https://www.raspberrypi-spy.co.uk/2016/07/using-bme280-i2c-temperature-pressure-sensor-in-python/)
+  - Script: pressure/bme280.py
+  - Protocol: I2C (and also SPI)
+  - Pins: 3V3, GND, SCK(SCL), SDI(SDA)
