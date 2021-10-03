@@ -1,0 +1,50 @@
+esphome:
+  name: nightlight
+  platform: ESP8266
+  board: nodemcuv2
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: !include ota-pw.yaml
+
+wifi:
+  networks: !include hrh.yaml
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Nightlight Fallback Hotspot"
+    password: !include ap-pw.yaml
+
+captive_portal:
+
+i2c:
+  - id: bus_a
+    sda: D3
+    scl: D4
+    scan: true
+
+#binary_sensor:
+#  - platform: gpio
+#    pin: 13
+#    name: "PIR Sensor"
+#    device_class: motion
+
+sensor:
+  - platform: bh1750
+    name: "BH1750 Illuminance"
+    i2c_id: bus_a
+    address: 0x23
+    measurement_duration: 69
+    update_interval: 5s
+
+  - platform: vl53l0x
+    name: "VL53L0x Distance"
+    i2c_id: bus_a
+    address: 0x29
+    update_interval: 250ms
+    long_range: true

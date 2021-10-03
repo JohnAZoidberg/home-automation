@@ -1,0 +1,27 @@
+esphome:
+  name: webserver
+  platform: ESP8266
+  board: nodemcuv2
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: !include ota-pw.yaml
+
+wifi:
+  networks: !include hrh.yaml
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Webserver Fallback Hotspot"
+    password: !include ap-pw.yaml
+
+captive_portal:
+
+web_server:
+  port: 80

@@ -1,0 +1,40 @@
+esphome:
+  name: nfc
+  platform: ESP8266
+  board: nodemcuv2
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: !include ota-pw.yaml
+
+wifi:
+  networks: !include hrh.yaml
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "NFC Fallback Hotspot"
+    password: !include ap-pw.yaml
+
+captive_portal:
+
+i2c:
+  sda: 4
+  scl: 5
+  scan: true
+  id: bus_a
+
+pn532_i2c:
+  update_interval: 1s
+
+binary_sensor:
+  - platform: pn532
+    # blue tag   FC:EF:27:17 Mifare Classic 1k
+    # white card 69:BD:42:B2
+    uid: 69-BD-42-B2
+    name: "PN532 NFC Tag"
